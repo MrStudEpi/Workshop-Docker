@@ -1,6 +1,7 @@
 meta.txt
 package-lock.json
 pnpm-lock.yaml
+node_modules
 
 # My files
 src/encrypted/encrypt.js
