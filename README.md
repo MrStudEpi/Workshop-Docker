@@ -57,15 +57,29 @@ Tips:
 Trouver le moyen de relié une image mongodb (https://hub.docker.com/_/mongo) à l'application dans le dossier app afin de retrouver le flag via docker compose
 
 **Warning**
-Le MongoDB User doit avoir pour valeur: admin. Et le mongo db password doit etre egal au flag que vous avez trouvé à l'exercice d'avant.
-N'oubliez également pas de passer ces deux valeurs via DB_USER et DB_PASSWORD dans l'app sinon cela ne marchera pas
+
+    + Service MongoDB:
+
+    > Nom du service: mongodb
+    > Port: 27017 relié au 27017
+    > Volume: mongodb_data -> /data/db
+    > Variables d'environments: MONGO_INITDB_ROOT_USERNAME (admin) & MONGO_INITDB_ROOT_PASSWORD (flag précédent -> FLAG{x} soit x)
+    > Nom du Réseau: awesome_network (bridge)
+
+    + Service App:
+
+    > Nom du service: app
+    > Port: 3000 relié au 3000
+    > Variables d'environments: DB_USER (admin) & DB_PASSWORD (flag précédent -> FLAG{x} soit x)
+    > Nom du Réseau: awesome_network (bridge)
+    > Dépendance: mongodb
 
 Tips:
     - Tout sur docker compose: https://docs.docker.com/compose/
 
 ## Bonus
 
-Vous pourriez essayer de déveloper votre propre service (server, client) et de faire en sorte qu'il puissent communiquer entre eux
+Vous pourriez essayer de déveloper votre propre application (server, client) et de faire en sorte qu'il puissent communiquer entre eux
 
 ## Documentations
 
