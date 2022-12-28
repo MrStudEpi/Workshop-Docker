@@ -15,7 +15,7 @@ A ce stade vous avez déjà installer docker sur votre machine.
 
 ## Exercices
 
-/*INFORMATIONS*\
+**INFORMATIONS**
 
 Pour chaque exercice à partir du 2 un flag est caché, resolver l'exercice pour le trouver.
 Quand ce dernier est trouvée garder le de coté et si l'envie vous en prend n'hesitez pas
@@ -29,7 +29,7 @@ I. Docker
 
 1. Hello World !
 
-/*TODO*\
+**TODO**
 Trouver le moyen de lancer un conteneur docker qui dis: Hello World !
 
 Tips:
@@ -37,11 +37,11 @@ Tips:
 
 2. Encrypted (Votre premier Dockerfile)
 
-/*TODO*\
+**TODO**
 Trouver le moyen de créer un dockerfile qui setup un environment node qui puisse executer le code javascript situé dans src/encrypted
 Transformer ce dockerfile en image et deployer le dans un conteneur
 
-/*Warning*\
+**Warning**
 La variable PRIVATE_KEY n'est pas setup, trouvez un moyen avec votre Dockerfile de la définir sur:
 
 ```bash
@@ -53,10 +53,10 @@ Tips:
 
 3. Awesome (Votre premier docker-compose)
 
-/*TODO*\
+**TODO**
 Trouver le moyen de relié une image mongodb (https://hub.docker.com/_/mongo) à l'application dans le dossier app afin de retrouver le flag via docker compose
 
-/*Warning*\
+**Warning**
 Le MongoDB User doit avoir pour valeur: admin. Et le mongo db password doit etre egal au flag que vous avez trouvé à l'exercice d'avant.
 N'oubliez également pas de passer ces deux valeurs via DB_USER et DB_PASSWORD dans l'app sinon cela ne marchera pas
 
@@ -69,5 +69,4 @@ Vous pourriez essayer de déveloper votre propre service (server, client) et de 
 
 ## Documentations
 
-Docker Hub: https://hub.docker.com
-Docker Commands (Made by Me): https://bit.ly/3WuAfce
+[Docker Hub](https://hub.docker.com) | [Docker Commands (Made by Me)](https://bit.ly/3WuAfce)
