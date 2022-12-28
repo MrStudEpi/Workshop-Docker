@@ -1,0 +1,8 @@
+meta.txt
+package-lock.json
+pnpm-lock.yaml
+
+# My files
+src/encrypted/encrypt.js
+docker-compose.yml
+Dockerfile
